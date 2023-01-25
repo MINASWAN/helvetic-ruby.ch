@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helvetic Ruby Conference 2023</title>
+    <style>
+/* Reset */
+
+body {
+  margin: 0;
+}
+
+blockquote,
+pre,
+ol,
+ul,
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border: none;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+aside,
+main,
+nav {
+  display: block;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Type scale */
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+  --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+  --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+  --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+  --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+  --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+  --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+}
+
+/* Space scale */
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+  --space-2xs: clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem);
+  --space-xs: clamp(0.88rem, calc(0.85rem + 0.11vw), 0.94rem);
+  --space-s: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --space-m: clamp(1.69rem, calc(1.62rem + 0.33vw), 1.88rem);
+  --space-l: clamp(2.25rem, calc(2.16rem + 0.43vw), 2.50rem);
+  --space-xl: clamp(3.38rem, calc(3.24rem + 0.65vw), 3.75rem);
+  --space-2xl: clamp(4.50rem, calc(4.33rem + 0.87vw), 5.00rem);
+  --space-3xl: clamp(6.75rem, calc(6.49rem + 1.30vw), 7.50rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.20rem + 0.54vw), 0.63rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.43rem + 0.65vw), 0.94rem);
+  --space-xs-s: clamp(0.88rem, calc(0.74rem + 0.65vw), 1.25rem);
+  --space-s-m: clamp(1.13rem, calc(0.86rem + 1.30vw), 1.88rem);
+  --space-m-l: clamp(1.69rem, calc(1.40rem + 1.41vw), 2.50rem);
+  --space-l-xl: clamp(2.25rem, calc(1.73rem + 2.61vw), 3.75rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.81rem + 2.83vw), 5.00rem);
+  --space-2xl-3xl: clamp(4.50rem, calc(3.46rem + 5.22vw), 7.50rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.13rem, calc(0.65rem + 2.39vw), 2.50rem);
+}
+
+:root {
+  --measure: 60ch;
+}
+
+/* Colours */
+
+:root {
+  --ruby: #cc0000;
+  --grey: #101010;
+}
+
+/* Typgraphy */
+
+:root {
+  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  --line-height: 1.6;
+}
+
+html {
+  color: var(--grey);
+}
+
+body {
+  font: 400 var(--step-0) / var(--line-height) var(--font-stack);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+/* Layout */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-block: 0;
+}
+
+.stack > * + * {
+  margin-block-start: var(--space, 1.5rem);
+}
+
+.constrain {
+  max-width: 68.75rem;
+  padding-right: var(--space-1);
+  padding-left: var(--space-1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+  padding: 1rem;
+}
+
+.cover > * {
+  margin-block: 1rem;
+}
+
+.cover > :first-child:not(main) {
+  margin-block-start: 0;
+}
+
+.cover > :last-child:not(main) {
+  margin-block-end: 0;
+}
+
+.cover > main {
+  margin-block: auto;
+}
+
+/* Utilities */
+
+.lead {
+  font-size: var(--step-2);
+  line-height: 1.3;
+}
+
+.center {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.small {
+  font-size: var(--step--1)
+}
+
+/*  */
+
+.main-title {
+  font-size: var(--step-5);
+  color: var(--ruby);
+}
+    </style>
+  </head>
+  <body>
+    <div class="cover constrain">
+      <main class="stack center">
+        <h1 class="main-title">Helvetic Ruby 2023</h1>
+        <p class="lead">A conference for the Swiss Ruby programming language community</p>
+        <p>(Date, location and speakers to be announced soon)</p>
+      </main>
+      <footer class="center small italic">
+        Last updated on <time>25th January 2023</time>.
+      </footer>
+    </div>
+  </body>
+</html>
