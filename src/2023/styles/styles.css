@@ -126,6 +126,28 @@ ul {
   margin: 0;
 }
 
+#hero {
+  color: white;
+  background-color: var(--ruby);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 1em 2em;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.venue-date {
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: white;
+  color: var(--ruby);
+  font-weight: bold;
+}
+
 /* Layout */
 
 .stack {
@@ -154,7 +176,6 @@ ul {
   display: flex;
   flex-direction: column;
   min-block-size: 100vh;
-  padding: 1rem;
 }
 
 .cover > * {
@@ -178,6 +199,7 @@ ul {
 .lead {
   font-size: var(--step-2);
   line-height: 1.3;
+  margin-bottom: 2rem;
 }
 
 .center {
@@ -196,11 +218,14 @@ ul {
 
 .main-title {
   font-size: var(--step-5);
+}
+
+.text-primary {
   color: var(--ruby);
 }
 
-.text-red {
-  color: var(--ruby);
+.bg-primary {
+  background-color: var(--ruby);
 }
 
 .bold {
