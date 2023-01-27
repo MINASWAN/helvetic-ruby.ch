@@ -13,11 +13,41 @@
           <h1 class="main-title">Helvetic Ruby 2023</h1>
           <p class="lead">A conference for the Swiss Ruby programming language community</p>
           <p class="venue-date">24.11.2023 in Bern, Switzerland</p>
+          <p id="countdown"></p>
         </hero>
       </main>
       <footer class="center small italic">
-        Last updated on <time>26th January 2023</time>.
+        Last updated on <time>27th January 2023</time>.
       </footer>
     </div>
+
+    <script>
+      var countDownDate = new Date("Nov 24, 2023 9:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="countdown"
+        document.getElementById("countdown").innerHTML = days + " days " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "We're ON!!!";
+        }
+      }, 1000);
+    </script>
   </body>
 </html>

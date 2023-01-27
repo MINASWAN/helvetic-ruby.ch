@@ -202,6 +202,11 @@ ul {
   margin-bottom: 2rem;
 }
 
+#countdown {
+  font-size: var(--step-5);
+  margin-top: 3rem;
+}
+
 .center {
   text-align: center;
 }
