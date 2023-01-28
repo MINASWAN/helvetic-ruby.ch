@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -rf ./public
+mkdir ./public
+
+cp CNAME ./public
+cp -r ./src/2023/* ./public
