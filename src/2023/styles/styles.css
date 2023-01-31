@@ -231,3 +231,25 @@ ul {
 .bold {
   font-weight: bold;
 }
+
+.social {
+  margin: var(--space-l);
+}
+
+.social--networks {
+  display: flex;
+  gap: var(--space-l);
+}
+
+.social--networks a {
+  opacity: 0.5;
+  color: white;
+}
+
+.social--networks a:hover {
+  opacity: 1;
+}
+
+.social--network-icon {
+  width: var(--space-l);
+}
