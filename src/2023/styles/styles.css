@@ -85,6 +85,7 @@ nav {
 /* Colours */
 
 :root {
+  --white: #fff;
   --ruby: #cc0000;
   --grey: #101010;
 }
@@ -127,7 +128,7 @@ ul {
 }
 
 #hero {
-  color: white;
+  color: var(--white);
   background-color: var(--ruby);
   display: flex;
   flex-direction: column;
@@ -143,7 +144,7 @@ ul {
   width: fit-content;
   padding: 1rem 2rem;
   margin: 1rem;
-  background-color: white;
+  background-color: var(--white);
   color: var(--ruby);
   font-weight: bold;
 }
@@ -243,7 +244,7 @@ ul {
 
 .social--networks a {
   opacity: 0.5;
-  color: white;
+  color: var(--white);
 }
 
 .social--networks a:hover {
