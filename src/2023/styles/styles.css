@@ -85,6 +85,7 @@ nav {
 /* Colours */
 
 :root {
+  --white: #fff;
   --ruby: #cc0000;
   --grey: #101010;
 }
@@ -127,7 +128,7 @@ ul {
 }
 
 #hero {
-  color: white;
+  color: var(--white);
   background-color: var(--ruby);
   display: flex;
   flex-direction: column;
@@ -143,7 +144,7 @@ ul {
   width: fit-content;
   padding: 1rem 2rem;
   margin: 1rem;
-  background-color: white;
+  background-color: var(--white);
   color: var(--ruby);
   font-weight: bold;
 }
@@ -192,6 +193,32 @@ ul {
 
 .cover > main {
   margin-block: auto;
+}
+
+/* Social */
+
+.social {
+  margin: var(--space-l);
+}
+
+.social--networks {
+  display: flex;
+  gap: var(--space-l);
+}
+
+.social--networks a {
+  opacity: 0.5;
+  color: var(--white);
+  display: flex;
+}
+
+.social--networks a:hover {
+  opacity: 1;
+}
+
+.social--network-icon {
+  display: flex;
+  width: var(--space-l);
 }
 
 /* Utilities */
