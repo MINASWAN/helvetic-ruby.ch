@@ -209,6 +209,7 @@ ul {
 .social--networks a {
   opacity: 0.5;
   color: var(--white);
+  display: flex;
 }
 
 .social--networks a:hover {
@@ -216,6 +217,7 @@ ul {
 }
 
 .social--network-icon {
+  display: flex;
   width: var(--space-l);
 }
 
