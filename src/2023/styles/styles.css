@@ -173,11 +173,11 @@ a {
   margin-block: 1rem;
 }
 
-.cover > :first-child:not(main) {
+.cover > :first-child {
   margin-block-start: 0;
 }
 
-.cover > :last-child:not(main) {
+.cover > :last-child {
   margin-block-end: 0;
 }
 
@@ -219,7 +219,7 @@ a {
   flex-direction: column;
   height: auto;
   padding: 1em 2em;
-  min-height: 80vh;
+  min-height: 75vh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -235,7 +235,7 @@ a {
 }
 
 .footer {
-  padding-bottom: var(--space-l);
+  padding-bottom: var(--space-m-l);
 }
 
 .footer-nav {
