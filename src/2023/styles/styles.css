@@ -130,6 +130,7 @@ ul {
 
 h1 { font-size: var(--step-4); }
 h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-2); }
 
 .prose li {
   margin-left: 1.5em;
