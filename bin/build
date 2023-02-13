@@ -11,9 +11,9 @@ BUILD_SUM=$(md5sum public/styles/styles.css | grep -Eo '^[^ ]+')
 CSS_FILE_NAME="styles.${BUILD_SUM}.css"
 
 if [[ "$OSTYPE" =~ ^darwin ]]; then
-  sed -i '' "s|styles.css|${CSS_FILE_NAME}|" ./public/*.html
+  sed -i '' "s|styles.css|${CSS_FILE_NAME}|" ./public/**/*.html
 else
-  sed -i "s|styles.css|${CSS_FILE_NAME}|" ./public/*.html
+  sed -i "s|styles.css|${CSS_FILE_NAME}|" ./public/**/*.html
 fi
 
 mv ./public/styles/styles.css ./public/styles/${CSS_FILE_NAME}

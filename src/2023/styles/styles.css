@@ -80,6 +80,7 @@ nav {
 
 :root {
   --measure: 60ch;
+  --gutter: var(--space-s-m);
 }
 
 /* Colours */
@@ -90,7 +91,7 @@ nav {
   --grey: #101010;
 }
 
-/* Typgraphy */
+/* Typography */
 
 :root {
   --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -127,26 +128,16 @@ ul {
   margin: 0;
 }
 
-#hero {
-  color: var(--white);
-  background-color: var(--ruby);
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  padding: 1em 2em;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+h1 { font-size: var(--step-4); }
+h2 { font-size: var(--step-3); }
+
+.prose li {
+  margin-left: 1.5em;
+  padding-left: 1em;
 }
 
-.venue-date {
-  width: fit-content;
-  padding: 1rem 2rem;
-  margin: 1rem;
-  background-color: var(--white);
-  color: var(--ruby);
-  font-weight: bold;
+a {
+  color: var(--grey);
 }
 
 /* Layout */
@@ -166,11 +157,10 @@ ul {
 }
 
 .constrain {
-  max-width: 68.75rem;
-  padding-right: var(--space-1);
-  padding-left: var(--space-1);
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: var(--measure);
+  padding-inline: var(--gutter);
+  margin-inline: auto;
 }
 
 .cover {
@@ -183,11 +173,11 @@ ul {
   margin-block: 1rem;
 }
 
-.cover > :first-child:not(main) {
+.cover > :first-child {
   margin-block-start: 0;
 }
 
-.cover > :last-child:not(main) {
+.cover > :last-child {
   margin-block-end: 0;
 }
 
@@ -195,21 +185,70 @@ ul {
   margin-block: auto;
 }
 
+.wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: var(--space-s-m);
+  gap: var(--space-s-m);
+}
+
+.region {
+  padding-block: var(--space-l-xl);
+}
+
+/* Navigation */
+.menu {
+  margin-block: var(--space-s-m);
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.top-menu ul {
+  justify-content: center;
+}
+
+/* Main page */
+
+.hero {
+  color: var(--white);
+  background-color: var(--ruby);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 1em 2em;
+  min-height: 75vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.venue-date {
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: var(--white);
+  color: var(--ruby);
+  font-weight: bold;
+}
+
+.footer {
+  padding-bottom: var(--space-m-l);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Social */
 
-.social {
-  margin: var(--space-l);
-}
-
-.social--networks {
-  display: flex;
-  gap: var(--space-l);
-}
-
 .social--networks a {
-  opacity: 0.5;
-  color: var(--white);
+  opacity: 0.75;
   display: flex;
+  color: var(--grey);
 }
 
 .social--networks a:hover {
@@ -247,14 +286,7 @@ ul {
   font-size: var(--step-5);
 }
 
-.text-primary {
-  color: var(--ruby);
-}
-
-.bg-primary {
-  background-color: var(--ruby);
-}
-
 .bold {
   font-weight: bold;
 }
+
