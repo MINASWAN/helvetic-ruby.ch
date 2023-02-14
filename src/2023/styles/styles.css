@@ -243,6 +243,21 @@ a {
   justify-content: space-between;
 }
 
+.shy-white-link {
+  text-decoration: none;
+  opacity: 0.8;
+  color: var(--white);
+}
+
+.shy-white-link em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.shy-white-link:hover {
+  opacity: 1;
+}
+
 /* Social */
 
 .social--networks a {
@@ -289,4 +304,3 @@ a {
 .bold {
   font-weight: bold;
 }
-
