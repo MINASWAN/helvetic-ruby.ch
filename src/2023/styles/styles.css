@@ -295,6 +295,11 @@ a {
   font-size: var(--step--1)
 }
 
+.my-3 {
+  margin-top: var(--step-3);
+  margin-bottom: var(--step-3);
+}
+
 /*  */
 
 .main-title {
