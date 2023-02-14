@@ -2,6 +2,14 @@
 
 Helvetic Ruby conference website
 
+Run development:
+
 ```sh
-ruby -run -ehttpd ./src -p8000
+bin/dev
+```
+
+Build:
+
+```sh
+bin/build
 ```
