@@ -240,6 +240,17 @@ a {
   font-weight: bold;
 }
 
+.call-for-speakers-ended {
+  margin: 1rem;
+  font-size: var(--step--1);
+  color: var(--gray);
+  opacity: 0.8;
+}
+
+.call-for-speakers-ended time {
+  text-decoration: underline;
+}
+
 .announcement {
   position: absolute;
   top: var(--space-s-l);
