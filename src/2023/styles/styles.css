@@ -89,6 +89,7 @@ nav {
   --white: #fff;
   --ruby: #cc0000;
   --grey: #101010;
+  --gold: Gold;
 }
 
 /* Typography */
@@ -238,6 +239,21 @@ a {
   background-color: var(--white);
   color: var(--ruby);
   font-weight: bold;
+}
+
+.flash {
+  text-align: center;
+}
+
+.call-for-speakers-ended {
+  padding: 0.6rem;
+  background-color: var(--gold);
+  font-size: var(--step--2);
+  color: var(--gray);
+}
+
+.call-for-speakers-ended time {
+  text-decoration: underline;
 }
 
 .announcement {
