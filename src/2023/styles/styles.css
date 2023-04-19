@@ -89,6 +89,7 @@ nav {
   --white: #fff;
   --ruby: #cc0000;
   --grey: #101010;
+  --gold: Gold;
 }
 
 /* Typography */
@@ -240,11 +241,15 @@ a {
   font-weight: bold;
 }
 
+.flash {
+  text-align: center;
+}
+
 .call-for-speakers-ended {
-  margin: 1rem;
-  font-size: var(--step--1);
+  padding: 0.6rem;
+  background-color: var(--gold);
+  font-size: var(--step--2);
   color: var(--gray);
-  opacity: 0.8;
 }
 
 .call-for-speakers-ended time {
