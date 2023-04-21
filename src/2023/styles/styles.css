@@ -241,6 +241,28 @@ a {
   font-weight: bold;
 }
 
+.venue-location {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: var(--space-xs);
+  margin: var(--space-m) 0;
+}
+
+.venue-location address {
+  font-style: normal;
+}
+
+.map-pin-icon {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.map-pin-icon svg {
+  width: var(--space-l);
+}
+
 .flash {
   text-align: center;
 }
