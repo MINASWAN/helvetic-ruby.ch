@@ -9,41 +9,92 @@
     <link href="https://ruby.social/@helvetic_ruby" rel="me">
   </head>
   <body>
-    <div class="cover">
-      <main>
-        <div class="hero-wrapper">
-          <div class="hero relative constrain">
-            <h1 class="main-title">Helvetic Ruby 2023</h1>
-            <p class="lead">A Ruby conference in Switzerland.</p>
-            <p class="venue-date"><time>24.11.2023</time> in Bern, Switzerland</p>
+    <div>
+      <header class="constrain">
+        <nav class="menu">
+        </nav>
+      </header>
 
-            <div class="venue-location">
-              <div class="map-pin-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <!-- https://heroicons.com/ map-pin -->
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                </svg>
+      <main class="constrain stack stack-xl">
+
+        <section class="region">
+          <div class="hero">
+            <div class="hero-brand">
+              <h1 class="main-title"><span class="brand">Helvetic<br> Ruby</span><br> <span class="brand-highlight main-title--year">2023</span></h1>
+              <svg class="ruby" viewBox="0 0 107 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M44.333 143.373L45.896 123.764L78.862 159.856L31.829 167.529L44.333 143.373Z" fill="#B90000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 138.684L2.984 59.537L47.744 86.819L45.896 123.764L44.333 143.373L31.829 167.529L0 138.684Z" fill="#FF1D1D"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M66.113 52.575L47.743 86.819L45.896 123.764L78.862 159.856L106.855 131.011L66.113 52.575Z" fill="#CF0000"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M68.49 14.21L70.763 43.907L66.113 52.575L106.855 131.011V52.575L68.489 14.209L68.49 14.21Z" fill="#FF3232"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.98401 59.537L44.76 0L68.49 14.21L70.763 43.907L66.113 52.575L47.743 86.819L2.98401 59.537Z" fill="#FF6363"/>
+                <path d="M62.203 66.216H44.627V84.426H26.417V102.002H44.627V120.212H62.203V102.002H80.413V84.426H62.203V66.216Z" fill="#F5F5F5"/>
+              </svg>
+            </div>
+            <div class="hero-details">
+              <div>
+                <div class="highlight eyebrow bold">
+                  When
+                </div>
+                <div class="lead">
+                  <time>24.11.2023</time>
+                </div>
               </div>
+              <div>
+                <div class="highlight eyebrow bold">
+                  Where
+                </div>
+                <div class="lead">
+                  Bern, Switzerland
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-              <address>
-                PROGR<br />
-                Waisenhausplatz 30<br/>
-                3011 Berne
-              </address>
+        <section>
+          <h2 class="highlight eyebrow">The first Swiss Ruby conference</h2>
+          <p class="lead">
+            Join us for a day of engaging talks and networking with fellow Ruby enthusiasts. We are planning a single track with plenty of time between talks for meeting community members from accross Switzerland and abroad.
+          </p>
+        </section>
+
+        <section class="region">
+          <div class="wrap mailing-list-cta">
+            <p class="mailing-list-intro">
+              More details will follow.
+              Drop us your email address and you'll always be the first to receive the latest news!
+            </p>
+            <p>
+              <a href="mailto: keep-me-posted@helvetic-ruby.ch?subject=Keep%20me%20posted&body=[You%20can%20leave%20this%20part%20of%20the%20mail]" class="cta">
+                Join mailing list
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section class="center">
+          <h2 class="eyebrow">Location</h2>
+
+          <div class="venue-location">
+            <div class="map-pin-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <!-- https://heroicons.com/ map-pin -->
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
             </div>
 
-            <a href="mailto: keep-me-posted@helvetic-ruby.ch?subject=Keep%20me%20posted&body=[You%20can%20leave%20this%20part%20of%20the%20mail]" class="small shy-white-link my-3">
-              Drop us your <em>email address</em> and you'll always be the first to receive the latest news!
-            </a>
+            <address>
+              PROGR<br />
+              Waisenhausplatz 30<br/>
+              3011 Berne
+            </address>
           </div>
-        </div>
+        </section>
 
-        <div class="flash relative">
-          <p class="call-for-speakers-ended">The Call for Speakers has ended on <time>31.03.2023</time>.</p>
-        </div>
       </main>
-      <footer class="footer stack constrain">
+
+      <footer class="footer stack constrain region">
         <div class="footer-nav wrap">
           <nav class="menu">
             <ul class="wrap">
@@ -80,7 +131,7 @@
 
         <div>
           <p class="small italic">
-            Last updated on <time>1st April 2023</time>.
+            Last updated on <time>22nd April 2023</time>.
           </p>
         </div>
       </footer>
