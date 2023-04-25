@@ -90,6 +90,25 @@ nav {
   --ruby: #cc0000;
   --grey: #101010;
   --gold: Gold;
+
+
+  --brand: #810202;
+  --brand-highlight: #f90101;
+
+  /*
+   * Especially for business cards
+  --subtle-text: #9e8e89;
+  --strong-text: #4a3133;
+  */
+ 
+  --primary: #3e0000;
+  --on-primary: #f2ede1;
+  --secondary: #e80101;
+
+  --link-text: #6b3b38;
+
+  --cta: #ffffff;
+  --on-cta: #e80101;
 }
 
 /* Typography */
@@ -102,7 +121,8 @@ nav {
 }
 
 html {
-  color: var(--grey);
+  color: var(--primary);
+  background: var(--on-primary);
 }
 
 body {
@@ -130,8 +150,8 @@ ul {
 }
 
 h1 { font-size: var(--step-4); }
-h2 { font-size: var(--step-3); }
-h3 { font-size: var(--step-2); }
+h2 { font-size: var(--step-2); }
+h3 { font-size: var(--step-1); }
 
 .prose li {
   margin-left: 1.5em;
@@ -139,7 +159,7 @@ h3 { font-size: var(--step-2); }
 }
 
 a {
-  color: var(--grey);
+  color: var(--link-color);
 }
 
 /* Layout */
@@ -157,6 +177,11 @@ a {
 .stack > * + * {
   margin-block-start: var(--space, 1.5rem);
 }
+
+.stack-xl {
+  --space: var(--space-xl);
+}
+
 
 .constrain {
   width: 100%;
@@ -200,6 +225,11 @@ a {
 }
 
 /* Navigation */
+
+.logo {
+  height: 3rem;
+}
+
 .menu {
   margin-block: var(--space-s-m);
 }
@@ -208,92 +238,84 @@ a {
   list-style: none;
 }
 
-.top-menu ul {
-  justify-content: center;
+.top-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Main page */
 
-.hero-wrapper {
-  color: var(--white);
-  background-color: var(--ruby);
-}
-
 .hero {
   display: flex;
-  flex-direction: column;
-  padding-top: var(--space-3xl);
-  padding-bottom: var(--space-l-xl);
-  padding-inline: var(--space-m-l);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: auto;
-  min-height: 75vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-l);
 }
 
-.venue-date {
-  width: fit-content;
-  padding: 1rem 2rem;
-  margin: 1rem;
-  background-color: var(--white);
-  color: var(--ruby);
-  font-weight: bold;
+.hero-brand {
+  position: relative;
+}
+
+.ruby {
+  position: absolute;
+  top: 4em;
+  right: -1em;
+  height: 7em;
+  shape-outside: polygon(-0.94% 80.95%, 3.74% 34.53%, 43% -0.59%, 28.98% 100.01%);
+}
+
+.main-title {
+  font-size: var(--step-5);
+  display: inline;
+}
+
+.main-title--year {
+  font-size: var(--step-4);
+}
+
+.brand {
+  color: var(--brand);
+}
+
+.brand-highlight {
+  color: var(--brand-highlight);
+}
+
+.hero-details {
+  margin-top: var(--space-s);
 }
 
 .venue-location {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: var(--space-xs);
-  margin: var(--space-m) 0;
+  margin-top: var(--space-m);
 }
 
 .venue-location address {
   font-style: normal;
 }
 
-.map-pin-icon {
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-}
-
 .map-pin-icon svg {
   width: var(--space-l);
 }
 
-.flash {
-  text-align: center;
-}
-
-.call-for-speakers-ended {
-  padding: 0.6rem;
-  background-color: var(--gold);
-  font-size: var(--step--2);
-  color: var(--gray);
-}
-
-.call-for-speakers-ended time {
-  text-decoration: underline;
-}
-
-.announcement {
-  position: absolute;
-  top: var(--space-s-l);
-  right: var(--space-2xs);
-  background-color: var(--white);
-  color: var(--grey);
-  transform: rotate(-6deg);
+.mailing-list-cta {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 7em;
-  height: 7em;
-  line-height: 1.3;
-  padding: var(--space-s-l);
-  border-radius: 100%;
-  border: 2px solid var(--ruby);
+  flex-wrap: wrap;
+  gap: var(--space-m);
+}
+
+.mailing-list-intro {
+  max-width: 66%;
+}
+
+.cta {
+  color: var(--cta);
+  background: var(--on-cta);
+  padding: 0.5em 1em;
+  border-radius: 100rem;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .footer {
@@ -305,27 +327,11 @@ a {
   justify-content: space-between;
 }
 
-.shy-white-link {
-  text-decoration: none;
-  opacity: 0.8;
-  color: var(--white);
-}
-
-.shy-white-link em {
-  font-style: normal;
-  text-decoration: underline;
-}
-
-.shy-white-link:hover {
-  opacity: 1;
-}
-
 /* Social */
 
 .social--networks a {
   opacity: 0.75;
   display: flex;
-  color: var(--grey);
 }
 
 .social--networks a:hover {
@@ -341,6 +347,14 @@ a {
 
 .relative {
   position: relative;
+}
+
+.highlight {
+  color: var(--secondary);
+}
+
+.eyebrow {
+  font-size: var(--step-1);
 }
 
 .lead {
@@ -359,17 +373,6 @@ a {
 
 .small {
   font-size: var(--step--1)
-}
-
-.my-3 {
-  margin-top: var(--step-3);
-  margin-bottom: var(--step-3);
-}
-
-/*  */
-
-.main-title {
-  font-size: var(--step-5);
 }
 
 .bold {
