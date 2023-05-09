@@ -224,6 +224,18 @@ a {
   padding-block: var(--space-l-xl);
 }
 
+.grid {
+  display: grid;
+  grid-gap: var(--space, var(--space-s-m));
+  --minimum: 15ch;
+}
+
+@supports (width: min(var(--minimum), 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--minimum), 100%), 1fr));
+  }
+}
+
 /* Navigation */
 
 .logo {
@@ -285,6 +297,26 @@ a {
 
 .hero-details {
   margin-top: var(--space-s);
+}
+
+.speakers {
+  --space: var(--space-l);
+  font-size: var(--step--1);
+  --minimum: 12ch;
+}
+
+.speaker-preview {
+  align-items: center;
+  --space: 0;
+}
+
+.speaker-preview figure {
+  margin-bottom: var(--space-xs-s);
+}
+
+.speaker-picture {
+  clip-path: polygon(20% 100%, 80% 100%, 100% 80%, 100% 20%, 80% 0%, 20% 0%, 0% 20%, 0% 80%);
+  object-fit: cover;
 }
 
 .venue-location {
