@@ -100,7 +100,7 @@ nav {
   --subtle-text: #9e8e89;
   --strong-text: #4a3133;
   */
- 
+
   --primary: #3e0000;
   --on-primary: #f2ede1;
   --secondary: #e80101;
@@ -373,6 +373,23 @@ a {
 .social--network-icon {
   display: flex;
   width: var(--space-l);
+}
+
+/* Sponsors */
+
+.sponsors {
+  margin-top: var(--space-m);
+}
+
+.sponsors ul {
+  list-style: none;
+}
+
+.grid-of-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: var(--space, var(--space-s-m));
+  --minimum: 15ch;
 }
 
 /* Utilities */
