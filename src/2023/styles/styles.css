@@ -230,6 +230,21 @@ a {
   --minimum: 15ch;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-of-4 > * {
+  width: 25%;
+  padding: 1rem;
+}
+
+.grid-of-6 > * {
+  width: 16.6666667%;
+  padding: 1rem;
+}
+
 @supports (width: min(var(--minimum), 100%)) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(min(var(--minimum), 100%), 1fr));
@@ -385,11 +400,14 @@ a {
   list-style: none;
 }
 
-.grid-of-4 {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-gap: var(--space, var(--space-s-m));
-  --minimum: 15ch;
+/* Partners */
+
+.partners {
+  margin-top: var(--space-m);
+}
+
+.partners ul {
+  list-style: none;
 }
 
 /* Utilities */
