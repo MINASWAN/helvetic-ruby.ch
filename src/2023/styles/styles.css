@@ -235,6 +235,11 @@ a {
   justify-content: center;
 }
 
+.grid-of-2 > * {
+  width: 50%;
+  padding: 1rem;
+}
+
 .grid-of-4 > * {
   width: 25%;
   padding: 1rem;
@@ -398,6 +403,16 @@ a {
 
 .sponsors ul {
   list-style: none;
+}
+
+.sponsors h3 {
+  font-size: var(--space-xs);
+  opacity: 0.5;
+  margin-top: var(--space-m);
+}
+
+.sponsors .logo {
+  margin-inline: auto;
 }
 
 /* Partners */
