@@ -425,6 +425,12 @@ a {
   list-style: none;
 }
 
+/* Speakers page */
+
+.speakers-and-talks {
+  gap: var(--space-l-xl);
+}
+
 /* Utilities */
 
 .relative {
