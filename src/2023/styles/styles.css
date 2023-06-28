@@ -250,6 +250,23 @@ a {
   padding: 1rem;
 }
 
+@media (max-width: 480px) {
+  .grid-of-2 > * {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .grid-of-4 > * {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .grid-of-6 > * {
+    width: 33.333333%;
+    padding: 1rem;
+  }
+}
+
 @supports (width: min(var(--minimum), 100%)) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(min(var(--minimum), 100%), 1fr));
