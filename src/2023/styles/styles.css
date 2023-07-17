@@ -420,6 +420,25 @@ a:focus .speaker-picture {
   max-height: 4rem;
 }
 
+/* Organizers */
+
+.organizer {
+  font-size: var(--step--1);
+  align-items: center;
+  --space: var(--space-xs);
+}
+
+.organizer-picture {
+  clip-path: polygon(20% 100%, 80% 100%, 100% 80%, 100% 20%, 80% 0%, 20% 0%, 0% 20%, 0% 80%);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+a:hover .organizer-picture,
+a:focus .organizer-picture {
+  clip-path: polygon(10% 100%, 90% 100%, 100% 90%, 100% 10%, 90% 0%, 10% 0%, 0% 10%, 0% 90%);
+}
+
 /* Speakers page */
 
 .speakers-and-talks {
