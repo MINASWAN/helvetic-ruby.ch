@@ -164,7 +164,15 @@ h3 { font-size: var(--step-1); }
 }
 
 a {
-  color: var(--link-color);
+  color: var(--link-text);
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: var(--link-text);
+}
+
+a:hover,
+a:focus {
+  color: currentcolor;
+  text-decoration-color: currentcolor;
 }
 
 blockquote {
@@ -368,6 +376,13 @@ a:focus .speaker-picture {
   border-radius: 100rem;
   text-decoration: none;
   font-weight: 500;
+  transition: background-color 200ms ease;
+}
+
+.cta:hover,
+.cta:focus {
+  color: var(--cta);
+  background: var(--brand);
 }
 
 .footer {
