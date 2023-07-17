@@ -36,6 +36,10 @@ nav {
   box-sizing: border-box;
 }
 
+address {
+  font-style: normal;
+}
+
 /* Type scale */
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
@@ -161,6 +165,11 @@ h3 { font-size: var(--step-1); }
 
 a {
   color: var(--link-color);
+}
+
+blockquote {
+  padding-left: var(--space-s);
+  border-left: 2px solid var(--subtle);
 }
 
 /* Layout */
@@ -336,10 +345,6 @@ a:focus .speaker-picture {
 
 .venue-location {
   margin-top: var(--space-m);
-}
-
-.venue-location address {
-  font-style: normal;
 }
 
 .map-pin-icon svg {
