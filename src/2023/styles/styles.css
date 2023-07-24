@@ -428,7 +428,7 @@ a:focus .speaker-picture {
 }
 
 .sponsor--gold img {
-  max-height: 5rem;
+  max-height: 6rem;
 }
 
 .sponsor--bronze img,
@@ -437,7 +437,7 @@ a:focus .speaker-picture {
 }
 
 .partner img {
-  max-height: 4rem;
+  max-height: 5rem;
 }
 
 /* Organizers */
