@@ -281,6 +281,7 @@ blockquote {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: var(--space-s-m);
 }
 
 /* Main page */
@@ -463,6 +464,29 @@ a:focus .organizer-picture {
 
 .speakers-and-talks {
   gap: var(--space-l-xl);
+}
+
+/* Schedule page */
+
+.schedule-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.schedule-item-title {
+  font-size: var(--step-1);
+  font-weight: 500;
+}
+
+.schedule-time {
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+  margin-right: var(--space-s-m);
+  color: var(--subtle);
+}
+
+.schedule-details {
+  margin-top: var(--space-3xs);
 }
 
 /* Utilities */
