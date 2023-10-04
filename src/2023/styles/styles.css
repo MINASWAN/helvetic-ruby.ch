@@ -528,3 +528,8 @@ a:focus .organizer-picture {
 .bold {
   font-weight: bold;
 }
+
+.list li {
+  margin-left: var(--step-0);
+  padding-left: var(--step--2);
+}
