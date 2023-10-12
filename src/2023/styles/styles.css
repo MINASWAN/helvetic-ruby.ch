@@ -489,6 +489,38 @@ a:focus .organizer-picture {
   margin-top: var(--space-3xs);
 }
 
+/* Locations page */
+
+section.arriving-from-abroad-details details {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin-bottom: var(--step--2);
+}
+
+section.arriving-from-abroad-details details summary {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: var(--step--2);
+}
+
+section.arriving-from-abroad-details details summary:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+
+section.arriving-from-abroad-details dl {
+  margin: 0;
+  padding: var(--step--2);
+}
+
+section.arriving-from-abroad-details dt {
+  font-size: var(--step--1);
+  color: var(--subtle);
+}
+
+section.arriving-from-abroad-details dd {
+  margin-left: var(--step-1);
+  margin-bottom: var(--step--1);
+}
+
 /* Utilities */
 
 .relative {
