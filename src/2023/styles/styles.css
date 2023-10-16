@@ -534,6 +534,21 @@ section.arriving-from-abroad-details dd {
   margin-bottom: var(--step--1);
 }
 
+dl.trivia dt {
+  margin: 0;
+  font-size: var(--step--1);
+  font-weight: bold;
+  padding: var(--space-3xs) var(--space-xs);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+dl.trivia dd {
+  margin: 0;
+  padding: var(--space-3xs) var(--space-xs);
+  margin-bottom: var(--space-s);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
 /* Utilities */
 
 .relative {
