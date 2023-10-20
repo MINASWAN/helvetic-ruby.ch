@@ -40,6 +40,11 @@ address {
   font-style: normal;
 }
 
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
 /* Type scale */
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
@@ -332,6 +337,14 @@ blockquote {
   --minimum: 12ch;
 }
 
+.multiple-speakers {
+  gap: var(--space-m-l);
+}
+
+.multiple-speakers h2 {
+  font-size: var(--step-1);
+}
+
 .speaker-preview {
   align-items: center;
   --space: 0;
@@ -547,6 +560,10 @@ section.arriving-from-abroad-details dd {
 
 .center {
   text-align: center;
+}
+
+.left-text {
+  text-align: left;
 }
 
 .italic {
