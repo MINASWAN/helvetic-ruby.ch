@@ -331,6 +331,48 @@ blockquote {
   margin-top: var(--space-s);
 }
 
+.impressions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  grid-auto-rows: 1fr;
+  gap: var(--space-3xs);
+}
+
+.grid-item {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.grid-item--1x1 {
+  aspect-ratio: 1;
+}
+
+.grid-item--1x2 {
+  grid-row: span 1;
+  grid-column: span 2;
+  aspect-ratio: 2 / 1;
+}
+
+.grid-item--1x3 {
+  grid-row: span 1;
+  grid-column: span 3;
+  aspect-ratio: 3 / 1;
+}
+
+.grid-item--2x1 {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.grid-item--2x2 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
 .speakers {
   --space: var(--space-l);
   font-size: var(--step--1);
