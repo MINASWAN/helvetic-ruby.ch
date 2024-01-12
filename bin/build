@@ -1,19 +1,30 @@
 #!/bin/bash
 
+function fingerprint_stylesheet() {
+  local base_dir=$1
+
+  BUILD_SUM=$(md5sum "${base_dir}"/styles/styles.css | grep -Eo '^[^ ]+')
+  CSS_FILE_NAME="styles.${BUILD_SUM}.css"
+
+  if [[ "$OSTYPE" =~ ^darwin ]]; then
+    sed -i '' "s|styles.css|${CSS_FILE_NAME}|" "${base_dir}"/*.html "${base_dir}"/**/*.html
+  else
+    sed -i "s|styles.css|${CSS_FILE_NAME}|" "${base_dir}"/*.html "${base_dir}"/**/*.html
+  fi
+
+  mv "${base_dir}"/styles/styles.css "${base_dir}/styles/${CSS_FILE_NAME}"
+}
+
+rm -rf tmp
+mkdir tmp
+
+cp -r ./src/* ./tmp
+
+fingerprint_stylesheet tmp/2023
+
 rm -rf ./public
 mkdir ./public
-
 cp CNAME ./public
-cp -r ./src/2023/* ./public
+cp -r ./tmp/2023/* ./public
 
-
-BUILD_SUM=$(md5sum public/styles/styles.css | grep -Eo '^[^ ]+')
-CSS_FILE_NAME="styles.${BUILD_SUM}.css"
-
-if [[ "$OSTYPE" =~ ^darwin ]]; then
-  sed -i '' "s|styles.css|${CSS_FILE_NAME}|" ./public/*.html ./public/**/*.html
-else
-  sed -i "s|styles.css|${CSS_FILE_NAME}|" ./public/*.html ./public/**/*.html
-fi
-
-mv ./public/styles/styles.css ./public/styles/${CSS_FILE_NAME}
+rm -rf tmp
