@@ -21,10 +21,12 @@ mkdir tmp
 cp -r ./src/* ./tmp
 
 fingerprint_stylesheet tmp/2023
+fingerprint_stylesheet tmp/2024
 
 rm -rf ./public
 mkdir ./public
 cp CNAME ./public
-cp -r ./tmp/2023/* ./public
+cp -r ./tmp/2024/* ./public
+cp -r ./tmp/2023 ./public
 
 rm -rf tmp
