@@ -168,6 +168,20 @@ h3 { font-size: var(--step-1); }
   padding-left: 1em;
 }
 
+.prose h2,
+.prose h3,
+.prose h4 {
+  margin-top: var(--space-l-xl);
+}
+
+.prose h1+h2,
+.prose h2+h3,
+.prose h3+h4 {
+  margin-top: var(--space-s-m);
+
+}
+
+
 a {
   color: var(--link-text);
   text-decoration-thickness: 1.5px;
@@ -473,6 +487,45 @@ a:focus .organizer-picture {
   clip-path: polygon(10% 100%, 90% 100%, 100% 90%, 100% 10%, 90% 0%, 10% 0%, 0% 10%, 0% 90%);
 }
 
+/* Sponsorships page */
+
+.sponsorships {
+  font-size: var(--step--1);
+}
+
+@media(min-width: 30rem) {
+  .sponsorships {
+    font-size: var(--step-0);
+  }
+}
+
+.sponsorships table {
+  border-collapse: collapse;
+}
+
+.sponsorships thead {
+  border-bottom: 1px solid var(--grey);
+}
+
+.sponsorships thead th {
+  padding-bottom: var(--space-xs);
+}
+
+.sponsorships td {
+  text-align: center;
+  padding-right: var(--space-s);
+  padding-top: var(--space-2xs);
+  padding-bottom: var(--space-2xs);
+}
+
+.sponsorships td:nth-child(1) {
+  text-align: left;
+}
+
+.sponsorships td:last-child {
+  padding-right: 0;
+}
+
 /* Speakers page */
 
 .speakers-and-talks {
@@ -579,6 +632,10 @@ dl.trivia dd {
 
 .left-text {
   text-align: left;
+}
+
+.right-text {
+  text-align: right;
 }
 
 .italic {
