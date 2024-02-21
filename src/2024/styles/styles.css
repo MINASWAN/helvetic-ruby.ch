@@ -459,6 +459,10 @@ a:focus .speaker-picture {
   max-height: 6rem;
 }
 
+.sponsor--silver img {
+  max-height: 4.5rem;
+}
+
 .sponsor--bronze img,
 .sponsor--travel img {
   max-height: 3rem;
