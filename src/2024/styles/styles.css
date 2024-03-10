@@ -316,6 +316,10 @@ blockquote {
   position: relative;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .ruby {
   position: absolute;
   top: 4em;
