@@ -347,31 +347,28 @@ blockquote {
 
 .speakers {
   --space: var(--space-l);
-  font-size: var(--step--1);
-  --minimum: 12ch;
-}
-
-.multiple-speakers {
-  gap: var(--space-m-l);
-}
-
-.multiple-speakers h2 {
-  font-size: var(--step-1);
+  --minimum: 20ch;
 }
 
 .speaker-preview {
-  align-items: center;
-  --space: 0;
+  display: flex;
+  gap: var(--space-s);
+  --space: var(--space-s);
+}
+
+.speaker-preview-details {
+  font-size: var(--step--1);
 }
 
 .speaker-preview figure {
-  margin-bottom: var(--space-xs-s);
+  flex-shrink: 0;
 }
 
 .speaker-picture {
   clip-path: polygon(20% 100%, 80% 100%, 100% 80%, 100% 20%, 80% 0%, 20% 0%, 0% 20%, 0% 80%);
   object-fit: cover;
   transition: 0.5s;
+  aspect-ratio: 1 / 1;
 }
 
 a:hover .speaker-picture,
@@ -631,6 +628,7 @@ dl.trivia dd {
 }
 
 .center {
+  align-items: center;
   text-align: center;
 }
 
