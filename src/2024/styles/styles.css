@@ -387,6 +387,21 @@ a:focus .speaker-picture {
   margin-top: var(--space-m);
 }
 
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .map-pin-icon svg {
   width: var(--space-l);
 }
