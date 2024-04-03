@@ -305,13 +305,6 @@ blockquote {
 
 /* Main page */
 
-.banner {
-  background-color: var(--brand);
-  color: #fff;
-  margin-bottom: 1em;
-  padding: 10px;
-}
-
 .hero {
   display: flex;
   justify-content: space-between;
