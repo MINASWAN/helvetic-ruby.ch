@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-ruby -run -ehttpd ./src -p8000

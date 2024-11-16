@@ -1,15 +1,11 @@
-# helvetic-ruby.ch
+# Helvetic Ruby conference website
+_helvetic-ruby.ch_
 
-Helvetic Ruby conference website
+## Run development:
+If you run the website for the first time or dependencies were updated, run `bundle install`
 
-Run development:
-
-```sh
-bin/dev
-```
-
-Build:
+To start a server run:
 
 ```sh
-bin/build
+bundle exec jekyll s
 ```
