@@ -1,7 +1,16 @@
 <header class="constrain">
   <nav class="menu top-menu">
+    {% unless page.no_logo %}
+    <div>
+      <a href="/">
+        <img src="/images/helvetic-ruby.svg" width="138" height="48" alt="Helvetic Ruby" />
+      </a>
+    </div>
+    {% endunless %}
+
     <ul class="wrap">
       <li><a href="/location">Location</a></li>
+      <li><a href="/schedule">Schedule</a></li>
       <li><a href="/#sponsors">Sponsors</a></li>
     </ul>
     <div>
