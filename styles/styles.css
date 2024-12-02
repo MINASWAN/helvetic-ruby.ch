@@ -345,6 +345,18 @@ blockquote {
   margin-top: var(--space-s);
 }
 
+.hero-dates {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-l);
+}
+
+.hero-date {
+  font-size: var(--step-1);
+  line-height: 1.3;
+}
+
 .speakers {
   --space: var(--space-l);
   --minimum: 20ch;
