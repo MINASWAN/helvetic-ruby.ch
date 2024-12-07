@@ -256,8 +256,8 @@ blockquote {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  grid-gap: var(--space-s-m);
-  gap: var(--space-s-m);
+  column-gap: var(--space-s-m);
+  row-gap: var(--space-3xs-2xs);
 }
 
 .region {
@@ -300,7 +300,8 @@ blockquote {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: var(--space-s-m);
+  column-gap: var(--space-s-m);
+  row-gap: var(--space-m-l);
 }
 
 /* Main page */
