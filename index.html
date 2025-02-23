@@ -64,6 +64,27 @@ no_logo: true
     </div>
   </section>
 
+  <section class="region stack" id="speakers">
+    <h2>2025 speakers</h2>
+    <div class="grid speakers">
+      {% for speaker in site.data._2025.speakers %}
+        <article class="speaker-preview">
+          <figure>
+            <img class="speaker-picture" width="80" height="80" alt="{{ speaker.name }}" src="{{ speaker.image }}">
+          </figure>
+          <div>
+            <div>
+              <a href="/talks#{{ speaker.id }}">{{ speaker.name }}</a>
+            </div>
+            <div class="speaker-preview-details">
+              <p>{{ speaker.title }}</p>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
   <section class="region stack stack-s">
     <h2>What to expect at Helvetic Ruby</h2>
     <div>
@@ -201,6 +222,23 @@ no_logo: true
               <img src="images/sponsors/pia.png" alt="Pia Planer logo" />
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="subtle">Travel sponsors</h3>
+      <div class="sponsors">
+        <div class="sponsor sponsor--travel">
+          <a href="https://thoughtbot.com" class="logo">
+            <img src="images/sponsors/thoughtbot.svg" alt="thoughtbot logo" style="max-height: 3rem" />
+          </a>
+        </div>
+
+        <div class="sponsor sponsor--travel">
+          <a href="https://github.com" class="logo">
+            <img src="images/sponsors/github.png" alt="GitHub logo" style="max-height: 3rem" />
+          </a>
         </div>
       </div>
     </div>

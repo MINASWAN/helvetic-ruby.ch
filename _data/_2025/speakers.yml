@@ -1,0 +1,72 @@
+- name: Jasveen Sandral
+  id: jasveen-sandral-contributing-to-ruby-core
+  biography: |
+    Software Engineer with 4+ years of experience in full-stack development and recent contributor to Ruby core. Currently working in Japan, developing Ruby on Rails applications at Shinmei Industry Co., Ltd. and contributing to open source. Previously led Ruby development at TYPICA and has experience working across Japan, Denmark, and India. Speaker at multiple international conferences including PyCon Africa and Open Source Conference Japan. Recent contributor of the CSV::TSV implementation to Ruby's standard library.
+  image: images/speakers/jasveen.jpg
+  title: "Contributing to Ruby Core: From Local Development to Global Impact"
+  abstract: |
+    Follow the journey of implementing TSV support in Ruby's standard library, from initial concept to merged code. Through this real-world case study, learn about the Ruby core contribution process, API design considerations, and collaboration with maintainers. Discover how small improvements to Ruby's standard library can have a significant impact on developers worldwide, while gaining practical insights for your own contributions to Ruby core.
+
+- name: Ronan Limon Duparcmeur
+  id: ronan-limon-duparcmeur-the-test-pyrmaid-and-the-temple-of-love
+  biography: |
+    Less of a Renaissance Developer than a Code Grognard, Ronan has been writing software for more than 25 years. Thankfully, most of them were spent in Ruby land, and that is the secret to his youthful enthusiasm and baffling immaturity.
+
+    When he's not giving his poor coworkers lectures on the importance of making right and not just making it work, Ronan enjoys complaining about TailwindCSS or TypeScript on social media. And also playing tabletop RPGs. And heavy metal.
+  image: images/speakers/ronan.jpg
+  title: The Test Pyramid and the Temple of Love
+  abstract: |
+    Come learn everything you need to know to give your Rails app a test suite worthy of the Seven Wonders of the Ancient World, thanks to a 1992 hit song by an English gothic rock band.
+
+- name: Jess Sullivan
+  id: jess-suillivan-mastering-rails-orm
+  biography: |
+    Jess brings a unique perspective to the tech world, transitioning from a decade-long career as an educator in both Canada and the UK to becoming a skilled Ruby engineer. Her journey from teaching to coding reflects her passion for continuous learning and adaptation.
+
+    When not immersed in code, Jess finds joy in hiking, playing saxophone, cultivating her garden, and spending time with her beloved Old English Sheepdog (her husband is pretty great too). Currently based in the UK, she makes an annual pilgrimage back to Canada to reconnect with family, friends, and maple syrup.
+  image: images/speakers/jess.jpg
+  title: "ActiveRecord Unveiled: Mastering Rails’ ORM"
+  abstract: |
+    "ActiveRecord drives Rails’ seamless database interactions, but what really happens behind the scenes? In this talk, we’ll follow a developer’s journey to uncover how Rails’ ORM maps data between app and database, demystifying the key mechanisms that make Rails so powerful."
+  sponsor: Travel sponsored by <a href="https://scan.com">scan.com</a>.
+
+- name: "Kyle d'Oliveira"
+  id: kyley-d-oliveira-more-feedback-quantity-becomes-quality
+  biography: |
+    Based in Vancouver, Canada, Kyle is a jack of all trades and a master of some; at least he thinks so. He works as a software developer readily turning abstract ideas into working pieces of software. He has been focused recently on new tools for developers and helping others excel in their career. When not developing, he enjoys amazing food and craft breweries of the west coast, as well as picking up really heavy objects just so they can be put back down.
+  image: images/speakers/kyle.jpg
+  title: "More feedback! Quantity becomes quality"
+  abstract: |
+    Can someone write a large quantity of high-quality code? Yes! The idea that speed sacrifices quality is a myth. The key lies in gathering ample feedback—both internal and external. Shifting focus to feedback quantity, while still prioritizing quality, enables consistent high-quality code. This talk explores supporting research and practical ways to gather feedback effectively.
+
+- name: Kinsey Durham Grace
+  id: kinsey-durham-grace-best-practices-for-scaling-your-rails-application
+  biography: |
+    Kinsey Durham Grace is an engineer on the Deploys Team at GitHub, where she helps build and improve tools that power reliable deployments at scale. She serves on the Board of Directors for Ruby Central, fostering the growth of the Ruby community, and leads GitHub’s Adacats, the Women and Non-binary Community of Belonging, championing inclusivity and connection.
+
+    Based in beautiful Colorado, Kinsey enjoys spending time in the mountains with her two young children and her adventurous pup, embracing all the outdoor adventures the Rockies have to offer.
+  image: images/speakers/kinsey.jpg
+  title: "Beyond Caching: Best Practices for Scaling your Rails Application"
+  abstract: |
+    Scaling Rails apps goes far beyond caching! Discover proven techniques to handle millions of users with confidence. We’ll dive into optimizing data, databases, dependencies, gems, and monitoring. Walk away with practical insights to elevate your Rails app to the next level.
+  sponsor: Travel sponsored by <a href="https://github.com">GitHub</a>.
+
+- name: Rémy Hannequin
+  id: remy-hannequin-modelling-the-cosmos-in-ruby
+  biography: |
+    Rémy is senior developer at thoughtbot working from Paris. He loves Ruby and astronomy, so he created the gem Astronoby for calculating astronomical events. When the computer is off he likes fermenting stuff and play bass.
+  image: images/speakers/remy.png
+  title: "Modelling the Cosmos in Ruby: Applying OOP and Domain-Driven Design to Astronomical Concepts"
+  abstract: |
+    Learn how to turn complex domains into elegant Ruby code! Using Astronoby (https://github.com/rhannequin/astronoby), a gem for astronomical calculations, this talk dives into applying Domain-Driven Design and OOP to model celestial phenomena. Discover practical techniques for tackling complexity, creating readable APIs, and building maintainable software. Whether you're navigating scientific challenges or exploring new domains, this talk offers patterns for taking Ruby beyond its usual orbit.
+  sponsor: Travel sponsored by <a href="https://thoughtbot.com">thoughtbot</a>.
+
+- name: Yara Debian
+  id: yara-debian-the-art-of-code-finding-aesthetics-in-logic
+  biography: |
+    Yara is a software engineer specialising in Ruby on Rails, with a knack for crafting user-focused web applications. Passionate about clean code and mentorship, she bridges the gap between vision and development. Inspired by both technology and art, Yara brings a creative lens to solving complex problems.
+  image: images/speakers/yara.jpg
+  title: "The art of code: Finding Aesthetics in logic. 🎨"
+  abstract: |
+    "What if writing code and creating art aren’t as different as we think? From the blank canvas to the final product, both artists and coders follow a journey of exploration and iteration. Join us as we uncover the surprising similarities between the worlds of painting and programming—how creativity, rules, and tools shape both crafts. Could the same principles that guide an artist also guide a developer?"
+
