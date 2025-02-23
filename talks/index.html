@@ -7,10 +7,40 @@ social_media_title: Talks | Helvetic Ruby Conference 2025
 <main class="constrain region">
   <h1>Talks & speakers</h1>
   <div class="stack speakers-and-talks">
-    <p>Talks for 2025 have not been announced yet. See the talks from previous years.</p>
-    <ul class="prose">
-      <li><a href="../../2024/talks/">2024 talks</a></li>
-      <li><a href="../../2023/talks/">2023 talks</a></li>
-    </ul>
+    {% for speaker in site.data._2025.speakers %}
+    <article class="stack region" id="{{ speaker.id }}">
+      <section class="stack">
+        <div class="stack speaker-preview center">
+          <figure>
+            <img class="speaker-picture" width="200" height="200" alt="{{ speaker.name }}" src="/{{ speaker.image }}">
+          </figure>
+          <h2>
+            {{ speaker.name }}
+          </h2>
+        </div>
+
+        <div class="stack">
+          {{ speaker.biography | markdownify }}
+        </div>
+      </section>
+
+      <section class="stack">
+        <h3>
+          {{ speaker.title }}
+        </h3>
+
+        {{ speaker.abstract | markdownify }}
+
+        {% if speaker.sponsor %}
+        <footer class="wrap">
+          <img src="/images/icons/train.svg" alt="" />
+          <p>
+            {{ speaker.sponsor }}
+          </p>
+        </footer>
+        {% endif %}
+      </section>
+    </article>
+    {% endfor %}
   </div>
 </main>
