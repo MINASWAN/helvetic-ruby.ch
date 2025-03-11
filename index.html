@@ -83,6 +83,29 @@ no_logo: true
         </article>
       {% endfor %}
     </div>
+
+    <h3>Workshops</h3>
+    <div class="grid speakers">
+      {% for workshop in site.data._2025.workshops %}
+        <article class="speaker-preview">
+          <figure class="{% if workshop.presenters.size > 1 %}multiple-speaker-pictures{% endif %}">
+            {% for speaker in workshop.presenters %}
+            <img class="speaker-picture" width="80" height="80" alt="{{ speaker.name }}" src="{{ speaker.image }}">
+            {% endfor %}
+          </figure>
+          <div>
+            <div>
+              <a href="/talks#{{ workshop.id }}">
+                {{ workshop.presenters | map: "name" | join: " & <br>" }}
+              </a>
+            </div>
+            <div class="speaker-preview-details">
+              <p>{{ workshop.title }}</p>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
   </section>
 
   <section class="region stack stack-s">
@@ -98,12 +121,12 @@ no_logo: true
     </div>
     <div>
       <h3>Extra activities on surrounding days</h3>
-      <p>While the conference talks are on Friday, 23rd May 2025, we are also planning optional community events on Thursday and Saturday.</p>
+      <p>While the conference talks are on Friday, 23rd May 2025, we have also planned community events on Thursday and Saturday.</p>
     </div>
 
     <div>
-      <h3>Community day on Thursday, 22nd May</h3>
-      <p>On Thursday afternoon we will iterate on last year's idea of a community space. Work on open source, experiment with new ideas, or hang out with other attendees. More details to come. <a href="mailto:info@helvetic-ruby.ch">Contact us</a> if you want to propose something.
+      <h3>Workshops and community day on Thursday, 22nd May</h3>
+      <p>On Thursday afternoon we offer 2 workshops! In addition, there will be a community space to work on open source or hang out with other attendees.
       </p>
     </div>
 

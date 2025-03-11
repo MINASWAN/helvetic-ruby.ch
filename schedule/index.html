@@ -9,19 +9,54 @@ social_media_title: Schedule | Helvetic Ruby 2025
     <h1>Schedule</h1>
 
     <p>
-      The conference will take place on <a href="#friday">Friday, 23rd May 2025</a>. We are also planning activities for the day before and the day after.
+      <a href="#thursday">Thursday</a> is our community day. It includes workshops. The conference talks take place on <a href="#friday">Friday</a>. <a href="#saturday">Saturday</a> is for post-conference activities.
     </p>
 
     <div class="region stack">
       <h2 id="thursday">Thursday, 22nd May 2025</h2>
 
-      <p>Thursday will be a community day. Work on open source, experiment with new ideas, or hang out with other attendees. </p>
+      <p>The Thursday activities are at Impact Hub Geneva (Rue Fendt 1, 1201 Geneva).</p>
 
-      <p>Time and location to be announced.</p>
+      <article class="schedule-item">
+        <time class="schedule-time">13:15-16:30</time>
+        <h3 class="schedule-item-title">Open source office hours</h3>
+      </article>
+
+      <article class="schedule-item">
+        <time class="schedule-time">13:30-16:30</time>
+        <div>
+          <h3 class="schedule-item-title">
+
+            <a href="/talks#{{ site.data._2025.workshops[0].id }}">
+              {{ site.data._2025.workshops[0].title }}
+            </a>
+          </h3>
+          <p class="schedule-details">
+            {{ site.data._2025.workshops[0].presenters | map: "name" | join: ", " }}
+          </p>
+        </div>
+      </article>
+
+      <article class="schedule-item">
+        <time class="schedule-time">13:30-16:00</time>
+        <div>
+          <h3 class="schedule-item-title">
+            <a href="/talks#{{ site.data._2025.workshops[1].id }}">
+              {{ site.data._2025.workshops[1].title }}
+            </a>
+          </h3>
+          <p class="schedule-details">
+            {{ site.data._2025.workshops[1].presenters | map: "name" | join: ", " }}
+          </p>
+        </div>
+      </article>
     </div>
 
     <div class="region stack">
       <h2 id="friday">Friday, 23rd May 2025</h2>
+
+      <p>The conference is at Uptown Geneva (Rue de la Servette 2, 1201 Geneva).</p>
+
       <article class="schedule-item">
         <time class="schedule-time">08:45</time>
         <h3 class="schedule-item-title">Arrival & registration</h3>
