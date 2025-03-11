@@ -369,6 +369,25 @@ blockquote {
   --space: var(--space-s);
 }
 
+.multiple-speaker-pictures {
+  display: grid;
+  width: 80px;
+  grid-template-columns: repeat(6, 1fr)
+  grid-template-rows: repeat(6, 1fr)
+  position: relative;
+  height: fit-content;
+}
+
+.multiple-speaker-pictures .speaker-picture:nth-of-type(1) {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+}
+
+.multiple-speaker-pictures .speaker-picture:nth-of-type(2) {
+  grid-column: 3 / span 3;
+  grid-row: 3 / span 3;
+}
+
 .speaker-preview-details {
   font-size: var(--step--1);
 }

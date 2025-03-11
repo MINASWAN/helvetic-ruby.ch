@@ -4,8 +4,50 @@ title: Talks | Helvetic Ruby Conference 2025
 description: Talks and speakers at the 2025 edition of the Helvetic Ruby conference.
 social_media_title: Talks | Helvetic Ruby Conference 2025
 ---
-<main class="constrain region">
+<main class="stack constrain region">
   <h1>Talks & speakers</h1>
+
+  <h2>Workshops (Thursday, 22nd May)</h2>
+
+  <div class="stack speakers-and-talks">
+    {% for workshop in site.data._2025.workshops %}
+    <article class="stack region" id="{{ workshop.id }}">
+      <section class="stack">
+        <div class="wrap flex-center multiple-speakers">
+          {% for speaker in workshop.presenters %}
+          <div class="stack speaker-preview center">
+            <figure>
+              <img class="speaker-picture" width="200" height="200" alt="{{ speaker.name }}" src="/{{ speaker.image }}">
+            </figure>
+            <h2>
+              {{ speaker.name }}
+            </h2>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="stack">
+        {% for speaker in workshop.presenters %}
+          {% if workshop.presenters.size > 1 %}
+          <h3>About {{ speaker.name }}</h3>
+          {% endif %}
+          {{ speaker.biography | markdownify }}
+        {% endfor %}
+        </div>
+      </section>
+
+      <section class="stack">
+        <h3>
+          {{ workshop.title }}
+        </h3>
+
+        {{ workshop.abstract | markdownify }}
+      </section>
+    </article>
+    {% endfor %}
+  </div>
+
+  <h2>Talks (Friday, 23rd May)</h2>
   <div class="stack speakers-and-talks">
     {% for speaker in site.data._2025.speakers %}
     <article class="stack region" id="{{ speaker.id }}">

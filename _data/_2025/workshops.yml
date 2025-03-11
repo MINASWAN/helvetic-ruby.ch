@@ -1,0 +1,31 @@
+- title: "Building a Live Kanban Board with Hotwire and Rails"
+  id: hotwire-workshop
+  abstract: |
+    We will build a fully functional Kanban board application with Rails and Hotwire. During the workshops, you will gain hands-on experience in using Hotwire: Turbo Drive and Frames, Turbo Streams with broadcasting, and Stimulus controllers fundamentals. More importantly, we will thoroughly explain the core concepts of Hotwire, giving you the knowledge and tools to build dynamic and modern applications with Rails.
+
+    The workshop session consists of short theoretical introductions with practical examples and tasks to implement. We will progressively improve the existing application by making it more dynamic and usable with Hotwire.
+
+    The workshop is ideal for those who have already heard about Hotwire, but didn't have a chance to write a serious app with it! But if you know nothing - don't worry, before each task, we will explain the theory. We promise to give you an inspiration to use the benefits of Hotwire whenever possible!
+  presenters:
+    - name: Piotr Witek
+      biography: |
+        Piotr Paweł Witek is a software developer with a background in graphic animation and a passion for building intuitive, high-performance web applications. With over three years programming experience, he specializes in Ruby on Rails and Hotwire, crafting seamless, real-time user experiences with minimal JavaScript. Piotr thrives on meeting people and inspiring them to explore new technologies. You can often find him at conferences and meetups, sharing ideas, learning from others, and sparking enthusiasm for modern web development.
+      image: images/speakers/piotr.jpg
+    - name: Michał Łęcicki
+      biography: |
+        Michał is a seasoned software developer with over a decade of programming experience. Having worked on projects ranging from small startups to large-scale enterprise applications, he has developed a sharp eye for detail, precision, and performance optimization.
+
+        An active speaker at Ruby meetups and a dedicated writer, Michał is passionate about sharing his knowledge and experience with the Ruby community.
+      image: images/speakers/michal.jpg
+
+- title: "Riffing on Ruby"
+  id: riffing-on-ruby-workshop
+  abstract: |
+    How’s your approach to software design doing? Do you get to feel creative? Do you get to use that creativity to build a shared understanding with your team and arrive at simpler code? It’s called riffing! Riffing is a new approach that’s easy to pick up & can take you to the next level in your career.
+
+    When riffing we take full advantage of Ruby being a language, we use Ruby to speak and then program our mental model directly. We explore designs to get rapid feedback and then raise issues early. Riffing is really useful to derisk what we’re working on, ultimately leading to better communication and healthier codebases.
+  presenters:
+    - name: Kasper Timm Hansen
+      biography: |
+        Kasper is a fractional Ruby & Rails consultant with a strong focus on leveling up the whole team. He was on the Rails core team for six years where he reviewed & merged over 1000 contributor PRs.
+      image: images/speakers/kasper.jpg
