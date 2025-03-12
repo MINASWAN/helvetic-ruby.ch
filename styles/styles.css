@@ -281,6 +281,14 @@ blockquote {
   }
 }
 
+/* Banner */
+.banner {
+  background-color: var(--brand);
+  color: #fff;
+  margin-bottom: 1em;
+  padding: 10px;
+}
+
 /* Navigation */
 
 .logo {
