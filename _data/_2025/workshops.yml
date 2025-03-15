@@ -21,7 +21,7 @@
 - title: "Riffing on Ruby"
   id: riffing-on-ruby-workshop
   abstract: |
-    How’s your approach to software design doing? Do you get to feel creative? Do you get to use that creativity to build a shared understanding with your team and arrive at simpler code? It’s called riffing! Riffing is a new approach that’s easy to pick up & can take you to the next level in your career.
+    How’s your approach to software design doing? Do you get to feel creative? Do you get to use that creativity to build a shared understanding with your team and arrive at simpler code? You can with riffing! Riffing is a new approach that’s easy to pick up & can take you to the next level in your career.
 
     When riffing we take full advantage of Ruby being a language, we use Ruby to speak and then program our mental model directly. We explore designs to get rapid feedback and then raise issues early. Riffing is really useful to derisk what we’re working on, ultimately leading to better communication and healthier codebases.
   presenters:
