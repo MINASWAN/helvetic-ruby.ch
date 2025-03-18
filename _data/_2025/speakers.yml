@@ -38,6 +38,7 @@
   title: "More feedback! Quantity becomes quality"
   abstract: |
     Can someone write a large quantity of high-quality code? Yes! The idea that speed sacrifices quality is a myth. The key lies in gathering ample feedback—both internal and external. Shifting focus to feedback quantity, while still prioritizing quality, enables consistent high-quality code. This talk explores supporting research and practical ways to gather feedback effectively.
+  sponsor: Travel sponsored by <a href="https://www.aha.io/">Aha!</a>
 
 - name: Kinsey Durham Grace
   id: kinsey-durham-grace-best-practices-for-scaling-your-rails-application
