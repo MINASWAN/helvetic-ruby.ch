@@ -42,6 +42,15 @@ social_media_title: Talks | Helvetic Ruby Conference 2025
         </h3>
 
         {{ workshop.abstract | markdownify }}
+
+        {% if workshop.sponsor %}
+        <footer class="wrap">
+          <img src="/images/icons/train.svg" alt="" />
+          <p>
+            {{ workshop.sponsor }}
+          </p>
+        </footer>
+        {% endif %}
       </section>
     </article>
     {% endfor %}
