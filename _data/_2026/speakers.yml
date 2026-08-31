@@ -1,0 +1,68 @@
+- name: Jade Dickinson
+  id: jade-dickinson-building-a-multi-user-reservation-system
+  biography: |
+    Jade Dickinson is a Senior Software Engineer at Dentally, part of Henry Schein One, working across patient experience and appointment bookings. She has been using Ruby and speaking at meetups and conferences since 2016. In her spare time, she likes walking her Shiba Inu, attempting to broaden her culinary repertoire, and writing at https://jadedickinson.com.
+  image: images/speakers/jade-dickinson.jpeg
+  title: "Building a multi-user reservation system across Hotwire and a Rails API"
+  abstract: |
+    Building multi-user reservations for appointments, tickets or other limited resources is such a classic problem that it comes up in system design books as “Build a ticket reservation system”. What do you need to know to build it for real? I will share my experience: from building a simple MVP, planning how to scale it, and designing for reliability and recoverability in a distributed system.
+- name: Benoit Daloze
+  id: benoit-daloze-running-natve-extensions-and-ruby-code-in-parallel-threads
+  biography: |
+    Benoit Daloze is working at Datadog on the Ruby profiler. He is a CRuby committer and has a PhD about making Ruby parallel and fast. He is the maintainer of ruby/setup-ruby, ruby/spec and TruffleRuby.
+  image: images/speakers/benoit-daloze.jpeg
+  title: "Running Native Extensions and Ruby Code in Parallel Threads"
+  abstract: |
+    Ever heard of the one-lock-to-rule-them-all preventing parallel execution of Threads for both Ruby code and native extensions? Let's remove that!
+
+    In this talk we show how we are running native extensions in threads running in parallel, what conditions are needed for that and how to make your own native extension compatible with parallel execution.
+
+    We also look at what it takes to run Ruby code in parallel, including making Hash parallel, thread-safe and fast.
+
+    This is using Threads and not Ractors, so it's compatible with most gems without changing the programming model.
+- name: Esti Álvarez Otero
+  id: esti-alvarez-otero-the-database-diet-that-slimmed-down-our-codebase-too
+  biography: |
+    Esti is a software developer based in Bilbao, Spain, with 15 years experience building web applications with Ruby on Rails for different private companies and public institutions. Outside work she has been enjoying raising her now teenager and she's eager to explore new hobbies and reconnect with the Ruby community.
+  image: images/speakers/esti-alvarez.jpeg
+  title: "The database diet that slimmed down our codebase too."
+  abstract: |
+    Sysadmin: *We need to reduce the size of our database*.
+
+    Me: *Ok, we've done that before. I'll just delete a few million records from the database as we did last year*.
+
+    Spoiler: I didn't delete a single row. This is the story of how we cut our indexes by more than 60% through proper database design and maintenance instead. Chasing down _why_ those indexes existed took us straight into the Ruby code, uncovering some dead code. Expect PostgreSQL techniques you can apply on Monday morning.
+- name: Daniel Colson
+  id: daniel-colson-regex-as-easy-as-abc
+  biography: |
+    Daniel Colson is a Staff Software Engineer at GitHub. He'll happily talk with you about teaching, Rails and Ruby upgrades, safe database transactions, or contributing to and maintaining open source projects. Daniel was formerly a composer, bassist, violist da gamba, and professor of music.
+  image: images/speakers/daniel-colson.jpeg
+  title: "Regex as Easy as /(abc)?/"
+  abstract: |
+    What really happens when Ruby sees a regular expression like /abc/? While many of us use regular expressions regularly, we don't necessarily think much about how they really work. In this talk we'll trace a regular expression through Ruby's internals, from parsing the pattern into a syntax tree, to compiling into bytecode, to executing that bytecode on a small virtual machine. You'll come away with a deeper understanding and appreciation for Ruby's regular expression engine, and hopefully an increased confidence in working with regular expressions in Ruby.
+  sponsor: Travel sponsored by <a href="https://github.com">GitHub</a>.
+- name: KJ Loving
+  id: kj-loving-mirrors-dont-have-opinions
+  biography: |
+    KJ Loving is a Ruby developer, mentor, and community builder working at, Code the Dream, where she helps make tech more human, accessible, and welcoming for people from nontraditional paths. She found her way into software through Code the Dream after years in aquatics, water safety, and community care work, and now mentors others as they find their own place in the industry. Her work is shaped by a belief that technology should create access, build confidence, and make room for more people to belong.
+  image: images/speakers/kj-loving.jpeg
+  title: "Mirrors Don't Have Opinions"
+  abstract: |
+    Every system we build reflects something back at us. Our strengths, our blind spots, the things we never thought to question. We'll look at what the mirror actually shows, how it turns up in everything we ship, and how to make the reflection something worth looking at.
+- name: Iliana Hadzhiatanasova
+  id: iliana-hadzhiatanasova-from-rails-3-to-rails-edge
+  biography: |
+    Iliana is a Senior Engineer on the Datastores team at Fin (formerly Intercom). She upgrades Rails for a living and has the monkey patches to prove it. Her team owns the databases and frameworks that Fin is built on, and in between keeping hundreds of engineers shipping, she has contributed fixes upstream, mentored engineers, and migrated billions of rows to PlanetScale. When she's not chasing deprecation warnings, she's chasing marathon finish lines or helping organise Ruby meetups in London.
+  image: images/speakers/iliana-hadzhiatanasova.jpeg
+  title: "From Rails 3.0 to Rails Edge - 15 years of Rails upgrades in a 3 million line monolith"
+  abstract: |
+    Fin has been running on Rails since 2011. Starting from Rails 3.0, today our 3 million line monolith is running on the main branch of Rails. This talk covers our Rails upgrade journey over the last 15 years - the things that broke, the monkey patches keeping it all together, and what it takes to get 300 engineers comfortable shipping on unreleased Rails versions.
+  sponsor: Travel sponsored by <a href="https://fin.ai/">Fin</a>.
+- name: Xavier Noria
+  id: xavier-noria-it-works-but-there-is-something-off
+  biography: |
+    Xavier is a longtime member of the Ruby community. He has been on the Rails core team for about 15 years, is the author of Zeitwerk, and has received several awards for his contributions to the Ruby ecosystem.
+  image: images/speakers/xavier-noria.jpeg
+  title: "It Works, but There’s Something Off"
+  abstract: |
+    In this talk we'll discuss a bunch of things in Ruby and Rails that work in practice and we may be used to them, but that if you consider them carefully there's something off about them. It will be an exercise in interface design, and also a way to show beginners even mature software and seasoned Ruby developers may not always get it all nice and round.
