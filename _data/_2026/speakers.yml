@@ -49,6 +49,14 @@
   title: "Mirrors Don't Have Opinions"
   abstract: |
     Every system we build reflects something back at us. Our strengths, our blind spots, the things we never thought to question. We'll look at what the mirror actually shows, how it turns up in everything we ship, and how to make the reflection something worth looking at.
+- name: Xavier Noria
+  id: xavier-noria-it-works-but-there-is-something-off
+  biography: |
+    Xavier is a longtime member of the Ruby community. He has been on the Rails core team for about 15 years, is the author of Zeitwerk, and has received several awards for his contributions to the Ruby ecosystem.
+  image: images/speakers/xavier-noria.jpeg
+  title: "It Works, but There’s Something Off"
+  abstract: |
+    In this talk we'll discuss a bunch of things in Ruby and Rails that work in practice and we may be used to them, but that if you consider them carefully there's something off about them. It will be an exercise in interface design, and also a way to show beginners even mature software and seasoned Ruby developers may not always get it all nice and round.
 - name: Iliana Hadzhiatanasova
   id: iliana-hadzhiatanasova-from-rails-3-to-rails-edge
   biography: |
@@ -58,11 +66,3 @@
   abstract: |
     Fin has been running on Rails since 2011. Starting from Rails 3.0, today our 3 million line monolith is running on the main branch of Rails. This talk covers our Rails upgrade journey over the last 15 years - the things that broke, the monkey patches keeping it all together, and what it takes to get 300 engineers comfortable shipping on unreleased Rails versions.
   sponsor: Travel sponsored by <a href="https://fin.ai/">Fin</a>.
-- name: Xavier Noria
-  id: xavier-noria-it-works-but-there-is-something-off
-  biography: |
-    Xavier is a longtime member of the Ruby community. He has been on the Rails core team for about 15 years, is the author of Zeitwerk, and has received several awards for his contributions to the Ruby ecosystem.
-  image: images/speakers/xavier-noria.jpeg
-  title: "It Works, but There’s Something Off"
-  abstract: |
-    In this talk we'll discuss a bunch of things in Ruby and Rails that work in practice and we may be used to them, but that if you consider them carefully there's something off about them. It will be an exercise in interface design, and also a way to show beginners even mature software and seasoned Ruby developers may not always get it all nice and round.
