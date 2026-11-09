@@ -44,4 +44,15 @@ social_media_title: Talks | Helvetic Ruby Conference 2026
     </article>
     {% endfor %}
   </div>
+
+  <h2>Workshop (Thursday, 19th November)</h2>
+
+  <div class="stack">
+    {% for workshop in site.data._2026.workshops %}
+    <article class="stack region" id="{{ workshop.id }}">
+      <h3>{{ workshop.title }}</h3>
+      {{ workshop.abstract | markdownify }}
+    </article>
+    {% endfor %}
+  </div>
 </main>
