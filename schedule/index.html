@@ -15,15 +15,25 @@ social_media_title: Schedule | Helvetic Ruby 2026
     <div class="region stack">
       <h2 id="thursday">Thursday, 19th November 2026</h2>
 
+      <p>The community afternoon is at <a href="https://www.paulusakademie.ch/">Paulus Akademie</a> (<a href="https://maps.app.goo.gl/zjcomQWDCtms8x218">map</a>).</p>
+      <p>Choose between two parallel tracks:</p>
+
       <article class="schedule-item">
         <time class="schedule-time">13:30-16:30</time>
-        <div>
+        <div class="stack">
           <h3 class="schedule-item-title">
             Community afternoon
           </h3>
-          <p class="schedule-details">
-            <p>More information about the Thursday activities coming soon.</p>
-          </p>
+          <section class="stack">
+            <h4>Track 1: Open office hours</h4>
+            <p>Bring your open source project or join forces with other open source developers. You can also use this time to work on your own OSS or private project, or chat with others.</p>
+            <p>Do you want to bring your own project? Let us know on Slack :)</p>
+          </section>
+          <section class="stack">
+            {% assign workshop = site.data._2026.workshops[0] %}
+            <h4>Track 2: {{ workshop.title }}</h4>
+            <p class="schedule-details">A hands-on workshop led by Riccardo Carlesso. <a href="/talks#{{ workshop.id }}">See the full workshop details and what to bring.</a></p>
+          </section>
         </div>
       </article>
     </div>
@@ -222,4 +232,3 @@ social_media_title: Schedule | Helvetic Ruby 2026
     </div>
   </section>
 </main>
-
